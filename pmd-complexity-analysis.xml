@@ -10,18 +10,18 @@
         </properties>
         <priority>2</priority>
     </rule>
-<!--    <rule ref="category/java/design.xml/CyclomaticComplexity">-->
-<!--        <priority>2</priority>-->
-<!--    </rule>-->
-<!--    <rule ref="category/java/bestpractices.xml"/>-->
-<!--    <rule ref="category/java/codestyle.xml">-->
-<!--        <exclude name="LocalVariableCouldBeFinal"/>-->
-<!--        <exclude name="MethodArgumentCouldBeFinal"/>-->
-<!--    </rule>-->
-<!--    <rule ref="category/java/codestyle.xml/LongVariable">-->
-<!--        <properties>-->
-<!--            <property name="minimum" value="25"/>-->
-<!--        </properties>-->
-<!--    </rule>-->
-<!--    <rule ref="category/java/errorprone.xml"/>-->
+    <rule ref="category/java/design.xml/CyclomaticComplexity">
+        <priority>2</priority>
+    </rule>
+    <rule ref="category/java/bestpractices.xml"/>
+    <rule ref="category/java/codestyle.xml">
+        <exclude name="LocalVariableCouldBeFinal"/>
+        <exclude name="MethodArgumentCouldBeFinal"/>
+    </rule>
+    <rule ref="category/java/codestyle.xml/LongVariable">
+        <properties>
+            <property name="minimum" value="25"/>
+        </properties>
+    </rule>
+    <rule ref="category/java/errorprone.xml"/>
 </ruleset>
