@@ -17,7 +17,7 @@ public class GenericsExamplesTest {
 
         voorbeeld.add("Hallo");
 
-        String hallo = (String) voorbeeld.get(0);
+        String hallo = voorbeeld.get(0);
     }
 
     @Test
@@ -29,13 +29,13 @@ public class GenericsExamplesTest {
         String hallo = voorbeeld.get(0);
     }
 
-//    @Test
-//    void declarerenGenericClass() {
-//       List <Song> songs = new ArrayList<>();
-//         songs.add(new Song("Hard to Handle", "Black Crowes"));
-//
-//         List<Content> content = songs;
-//    }
+    @Test
+    void declarerenGenericClass() {
+       List <Song> songs = new ArrayList<>();
+         songs.add(new Song("Hard to Handle", "Black Crowes"));
+
+         List<Content> content = songs;
+    }
 
     @Test
     void sortAString() {

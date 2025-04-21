@@ -2,7 +2,7 @@ package nl.hu.cisq2.media_rater.domain;
 
 import java.util.Objects;
 
-public class Song implements Content, Comparable<Content> {
+public class Song implements Content {
 
     private final String title;
 
@@ -54,9 +54,4 @@ public class Song implements Content, Comparable<Content> {
                 '}';
     }
 
-
-    @Override
-    public int compareTo(Content o) {
-        return title.compareTo(o.getTitle());
-    }
 }
