@@ -3,7 +3,6 @@ package nl.hu.cisq2.media_rater.excercises;
 import nl.hu.cisq2.media_rater.domain.Content;
 import nl.hu.cisq2.media_rater.domain.MockContent;
 import nl.hu.cisq2.media_rater.domain.Song;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -18,7 +17,7 @@ public class GenericsExamplesTest {
 
         voorbeeld.add("Hallo");
 
-        String hallo = voorbeeld.get(0);
+        String hallo = (String) voorbeeld.get(0);
     }
 
     @Test
@@ -30,13 +29,13 @@ public class GenericsExamplesTest {
         String hallo = voorbeeld.get(0);
     }
 
-    @Test
-    void declarerenGenericClass() {
-       List <Song> songs = new ArrayList<>();
-         songs.add(new Song("Hard to Handle", "Black Crowes"));
-
-         List<Content> content = songs;
-    }
+//    @Test
+//    void declarerenGenericClass() {
+//       List <Song> songs = new ArrayList<>();
+//         songs.add(new Song("Hard to Handle", "Black Crowes"));
+//
+//         List<Content> content = songs;
+//    }
 
     @Test
     void sortAString() {
@@ -50,6 +49,13 @@ public class GenericsExamplesTest {
         List<Song> songs = MockContent.getPopularSongs();
 
         Collections.sort(songs);
+
+        System.out.println(songs);
+    }
+
+    @Test
+    void sortAnObjectWithComparableObject() {
+
     }
 
 
