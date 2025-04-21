@@ -1,8 +1,6 @@
 package nl.hu.cisq2.media_rater.excercises;
 
-import nl.hu.cisq2.media_rater.domain.Content;
-import nl.hu.cisq2.media_rater.domain.MockContent;
-import nl.hu.cisq2.media_rater.domain.Song;
+import nl.hu.cisq2.media_rater.domain.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -55,6 +53,16 @@ public class GenericsExamplesTest {
 
     @Test
     void sortAnObjectWithComparableObject() {
+        List<Artist> artists = new ArrayList<>(MockContent.getPopularArtists()
+                .stream()
+                .map(Artist::new)
+                .toList());
+
+        artists.sort(new  ByNameComparator());
+    }
+
+    @Test
+    void sortAnObjectWithLambda() {
 
     }
 
