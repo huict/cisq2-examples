@@ -1,7 +1,5 @@
 package nl.hu.cisq2.media_rater.domain;
 
-import nl.hu.cisq2.example.domain.Artist;
-
 import java.util.Comparator;
 
 public class ByNameComparator implements Comparator<Artist> {
