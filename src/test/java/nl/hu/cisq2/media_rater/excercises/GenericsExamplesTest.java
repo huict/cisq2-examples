@@ -63,9 +63,11 @@ public class GenericsExamplesTest {
 
     @Test
     void sortAnObjectWithLambda() {
+        List<Song> songs = MockContent.getPopularSongs();
 
+        songs.sort((s1, s2) -> s1.getArtist().compareTo(s2.getArtist()));
+
+        System.out.println(songs);
     }
-
-
 
 }
