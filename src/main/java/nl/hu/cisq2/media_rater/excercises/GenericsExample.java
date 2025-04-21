@@ -1,6 +1,7 @@
 package nl.hu.cisq2.media_rater.excercises;
 
-import nl.hu.cisq2.example.domain.Content;
+
+import nl.hu.cisq2.media_rater.domain.Content;
 
 import java.util.List;
 
