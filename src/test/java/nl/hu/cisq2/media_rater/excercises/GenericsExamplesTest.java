@@ -37,12 +37,6 @@ public class GenericsExamplesTest {
          List<Content> content = songs;
     }
 
-    @Test
-    void sortAString() {
-        List<String> strings = MockContent.getPopularArtists();
-
-        Collections.sort(strings);
-    }
 
     @Test
     void sortAnObject() {
@@ -51,6 +45,12 @@ public class GenericsExamplesTest {
         Collections.sort(songs);
 
         System.out.println(songs);
+    }
+    @Test
+    void sortAString() {
+        List<String> strings = MockContent.getPopularArtists();
+
+        Collections.sort(strings);
     }
 
     @Test
